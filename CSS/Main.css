@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "feature sidebar"
+    "bottom bottom";
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+/* Header */
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+   font-weight: 800;
+  color: #00001a;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #5a5a5a; ;
+  font-weight: 500px;
+}
+
+/* Feature */
+.feature {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.feature-image {
+  width: 100%;
+
+}
+.feature-text {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.feature-text h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #00001a;
+  flex: 1;
+  line-height: 3.2rem;
+}
+
+
+
+.feature-description {
+  flex: 1;
+}
+
+.feature-description p {
+  color: #5a5a5a;
+  margin-bottom: 1rem;
+}
+
+
+button {
+  background-color: #f15e50;
+  color: black;
+  padding: 0.75rem 2rem;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+
+
+
+/* Sidebar */
+.sidebar {
+  grid-area: sidebar;
+  background-color: #00001a;
+  color: white;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.sidebar h2 {
+  color: #e9aa52;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar li {
+  list-style: none;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 0.1px solid grey;
+}
+
+.sidebar li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.sidebar h3 {
+  font-size: 1rem;
+}
+
+.sidebar p {
+  font-size: 0.875rem;
+  color: #ccc;
+}
+
+/* Bottom Cards */
+.bottom-row {
+  grid-area: bottom;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.card img {
+  width: 25%;
+  border-radius: 5px;
+  height: auto;
+    object-fit: cover;
+}
+
+.card-content span {
+  font-weight: bold;
+  color: #ccc;
+  font-size: 1.5rem;
+}
+
+.card-content h4 {
+  font-size: 1.1rem;
+  margin: 0.25rem 0;
+}
+
+.card-content p {
+  font-size: 0.875rem;
+  color: #666;
+}
+.card {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.card-content .red {
+  color: #f15e50 !important;
+}
+
+@media (max-width: 1024px) {
+  .bottom-row {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    flex-direction: column;
+  }
+}
