@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #fff;
+  background-color:hsl(36, 100%, 99%) ;
   color: #333;
   line-height: 1.6;
 }
@@ -36,13 +36,13 @@ body {
   font-size: 2.5rem;
   font-weight: bold;
    font-weight: 800;
-  color: #00001a;
+  color: hsl(240, 100%, 5%);
 }
 
 .nav-links a {
   margin-left: 1.5rem;
   text-decoration: none;
-  color: #5a5a5a; ;
+  color: hsl(236, 13%, 42%) ;
   font-weight: 500px;
 }
 
@@ -67,7 +67,7 @@ body {
 .feature-text h1 {
   font-size: 3.2rem;
   font-weight: 800;
-  color: #00001a;
+  color: hsl(240, 100%, 5%);
   flex: 1;
   line-height: 3.2rem;
 }
@@ -79,14 +79,14 @@ body {
 }
 
 .feature-description p {
-  color: #5a5a5a;
+  color: hsl(236, 13%, 42%);
   margin-bottom: 1rem;
 }
 
 
 button {
-  background-color: #f15e50;
-  color: black;
+  background-color: hsl(5, 85%, 63%);
+  color: hsl(240, 100%, 5%);
   padding: 0.75rem 2rem;
   border: none;
   text-transform: uppercase;
@@ -101,13 +101,13 @@ button {
 .sidebar {
   grid-area: sidebar;
   background-color: #00001a;
-  color: white;
+  color: hsl(36, 100%, 99%);
   padding: 2rem;
   
 }
 
 .sidebar h2 {
-  color: #e9aa52;
+  color: hsl(35, 77%, 62%);
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -131,7 +131,7 @@ button {
 
 .sidebar p {
   font-size: 0.875rem;
-  color: #ccc;
+  color: hsl(233, 8%, 79%);
 }
 
 /* Bottom Cards */
@@ -157,11 +157,12 @@ button {
 .card-content h4 {
   font-size: 1.1rem;
   margin: 0.25rem 0;
+  color:hsl(240, 100%, 5%) ;
 }
 
 .card-content p {
   font-size: 0.875rem;
-  color: #666;
+  color:hsl(236, 13%, 42%) ;
 }
 .card {
   display: flex;
@@ -169,7 +170,7 @@ button {
   align-items: flex-start;
 }
 .card-content .red {
-  color: #f15e50 !important;
+  color: hsl(5, 85%, 63%) !important;
 }
 
 @media (max-width: 1024px) {
